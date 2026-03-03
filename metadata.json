@@ -1,0 +1,5 @@
+{
+  "name": "AI Voice CS Platform",
+  "description": "A web-based prototype of a voice AI customer service agent using Gemini Live API.",
+  "requestFramePermissions": ["microphone"]
+}
