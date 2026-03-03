@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect, FormEvent } from 'react';
 import { GoogleGenAI, LiveServerMessage, Modality } from '@google/genai';
 import { Mic, MicOff, Phone, PhoneOff, Settings, Database, MessageSquare, Activity, Loader2, Send } from 'lucide-react';
 
@@ -340,7 +340,7 @@ ATURAN PENTING:
     }
   }, [chatMessages, activeTab]);
 
-  const handleSendMessage = async (e: React.FormEvent) => {
+  const handleSendMessage = async (e: FormEvent) => {
     e.preventDefault();
     if (!chatInput.trim()) return;
 
